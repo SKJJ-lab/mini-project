@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Timetable</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Study Timetable</h1>
+
+        <div class="form-section">
+            <input type="text" id="subject" placeholder="Subject (e.g., IPT)">
+            
+            <select id="day">
+                <option value="">Select Day</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+            <input type="time" id="startTime">
+            
+            <select id="duration">
+                <option value="30">30 minutes</option>
+                <option value="60">1 hour</option>
+                <option value="90">1 hour 30 mins</option>
+                <option value="120">2 hours</option>
+            </select>
+
+            <input type="text" id="task" placeholder="Goal/Task (e.g., Practice Coding)">
+
+            <button onclick="addSchedule()">Add to Timetable</button>
+        </div>
+
+        <h2>Your Timetable</h2>
+
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Time</th>
+                    <th>Task</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
